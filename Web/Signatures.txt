@@ -1,0 +1,15 @@
+Offset_ClientCMD:		"engine.dll",		0, 0, 		"55 8B EC 8B ? ? ? ? ? 81 F9 ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 50 A1",	false,	true;
+Offset_BaseLocalPlayerCMO:	"client_panorama.dll",	1, 0x10, 	"A3 ? ? ? ? C7 05 ? ? ? ? ? ? ? ? E8 ? ? ? ? 59 C3 6A ?",					true,	true;
+Offset_EnginePointer:		"engine.dll",		2, 0, 		"8B 3D ? ? ? ? 8A F9",										true,	true;
+Offset_EntityBase:		"client_panorama.dll",	1, 0, 		"BB ? ? ? ? 83 FF 01 0F 8C ? ? ? ? 3B F8",							true,	true;
+Offset_PlayerResourcePointer:	"client_panorama.dll",	2, 0, 		"8B 3D ? ? ? ? 85 FF 0F 84 ? ? ? ? 81 C7",							true,	true;
+Offset_RadarBasePtr:		"client_panorama.dll",	1, 0, 		"A1 ? ? ? ? 8B 0C B0 8B 01 FF 50 ? 46 3B 35 ? ? ? ? 7C EA 8B 0D",				true,	true;
+Offset_glowObjectManager:	"client_panorama.dll",	1, 4, 		"A1 ? ? ? ? A8 01 75 4B",									true,	true;
+Offset_ForceJump:		"client_panorama.dll",	2, 0, 		"89 0D ? ? ? ? 8B 0D ? ? ? ? 8B F2 8B C1 83 CE 08",						true,	true;
+Offset_ForceAttack:		"client_panorama.dll",	2, 0, 		"89 0D ? ? ? ? 8B 0D ? ? ? ? 8B F2 8B C1 83 CE 04",						true,	true;
+Offset_Input:			"client_panorama.dll",	1, 0, 		"B9 ? ? ? ? F3 0F 11 04 24 FF 50 10",								true,	true;
+Offset_bSendPacket:		"engine.dll",		1, 0, 		"B3 01 8B 01 8B 40 10 FF D0 84 C0 74 0F 80 BF ? ? ? ? ? 0F 84",					true,	true;
+Offset_ViewMatrix:		"client_panorama.dll",	3, 0xB0, 	"0F 10 05 ? ? ? ? 8D 85 ? ? ? ? B9",								true,	true;
+Offset_m_LocalPlayerIndex:	"engine.dll",		2, 0, 		"8B 80 ? ? ? ? 40 C3",										true,	false;
+Offset_ViewAngles:		"engine.dll",		4, 0, 		"F3 0F 11 80 ? ? ? ? D9 46 04 D9 05",								true,	false;
+Offset_GameDir:			"engine.dll",		1, 0,		"68 ? ? ? ? 8D 85 ? ? ? ? 50 68 ? ? ? ? 68",							true,	true;
