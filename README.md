@@ -1,4 +1,4 @@
-#A CS:GO MultiHack (ACSGOMH)
+# A CS:GO MultiHack (ACSGOMH)
 
 ![Menu](https://i.imgur.com/9dnQ3Ls.png)
 
