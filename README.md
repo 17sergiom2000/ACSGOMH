@@ -13,21 +13,21 @@ Even though they might not use the same language, the logic obviously stays the 
 
 It does not use shellcode-injection, but still has a pretty big variety of features, including but not limited to:
 
--WebRadar
--TS3Callout
--Aimbot
--Triggerbot
--SkinChanger
--PlayerGlow (Team-, Healthbased, Vulnerable)
--EntityGlow (Weapons, Bomb, Grenade, Chickens)
--Bunnyhop
--RankParser
--AntiFlash
--ChatSpam
--FovChanger
--FakeLag
--NoHands
--Android App/API (includes VibratorESP)
+- WebRadar
+- TS3Callout
+- Aimbot
+- Triggerbot
+- SkinChanger
+- PlayerGlow (Team-, Healthbased, Vulnerable)
+- EntityGlow (Weapons, Bomb, Grenade, Chickens)
+- Bunnyhop
+- RankParser
+- AntiFlash
+- ChatSpam
+- FovChanger
+- FakeLag
+- NoHands
+- Android App/API (includes VibratorESP)
 
 Some Features are buggy, because they can not easily be implemented in an external flawlessly (especially without shellcode).
 
