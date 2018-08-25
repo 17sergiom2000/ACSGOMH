@@ -24,11 +24,11 @@ Global hiddenmode=0
 
 
 XIncludeFile "ATPMemory.pbi"
-XIncludeFile "ACSGOMH_LoadingScreen.pbf"
-XIncludeFile "ACSGOMH_KeyBinds.pbf"
-XIncludeFile "ACSGOMH_ColorSelection.pbf"
-XIncludeFile "ACSGOMH_MainGUI.pbf"
 XIncludeFile "BSPParser.pb"
+XIncludeFile "GUI\ACSGOMH_LoadingScreen.pbf"
+XIncludeFile "GUI\ACSGOMH_KeyBinds.pbf"
+XIncludeFile "GUI\ACSGOMH_ColorSelection.pbf"
+XIncludeFile "GUI\ACSGOMH_MainGUI.pbf"
 
 
 Global ACSGOMHParameter$=ProgramParameter(0)
@@ -2846,8 +2846,7 @@ ForEver
 
 
 ; IDE Options = PureBasic 5.43 LTS (Windows - x86)
-; CursorPosition = 2725
-; FirstLine = 828
+; CursorPosition = 23
 ; Folding = BAAAAAAAAAAAAAAA+
 ; EnableThread
 ; EnableXP
