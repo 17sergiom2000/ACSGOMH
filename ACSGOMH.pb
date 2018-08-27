@@ -795,7 +795,7 @@ Procedure ClientCMD(command.s)
 EndProcedure
 
 Procedure.s GetPlayerName(EntityIndex.i)
-  ProcedureReturn ATPMemory::RPM_String(hProc, RadarStructBase+(EntityIndex+1)*Offset_RadarEntityLoopDistance+$18, 32)
+  ProcedureReturn ATPMemory::RPM_String(hProc, RadarStructBase+(EntityIndex+2)*Offset_RadarEntityLoopDistance+$18, 32)
 EndProcedure
 
 Procedure getWeaponEntitybyPlayerEntity(pEntityBase.i)
@@ -1427,11 +1427,10 @@ Procedure SkinChanger()
 EndProcedure
 
 Procedure TS3Callout(nullptr.i)
-  Protected *ts3buffer=AllocateMemory(1024)
   TS3CQConnectionID=OpenNetworkConnection("localhost",25639)
   If TS3CQConnectionID
     ReceiveString(TS3CQConnectionID)
-    SendNetworkString(TS3CQConnectionID, "auth apikey="+GetTS3AuthenticationKey()+#CRLF$)
+    SendString(TS3CQConnectionID, "auth apikey="+GetTS3AuthenticationKey())
     ReceiveString(TS3CQConnectionID)
     KeyAcceptanceState$=ReceiveString(TS3CQConnectionID)
     If  FindString(KeyAcceptanceState$, "error id=0 msg=ok")
@@ -1444,18 +1443,17 @@ Procedure TS3Callout(nullptr.i)
           EndIf
         Next x
         If temp$<>defaultmessage$
-          SendNetworkString(TS3CQConnectionID,"sendtextmessage targetmode=2 target=0 msg="+ReplaceString(temp$," ","\s")+#CRLF$)
-          ReceiveNetworkData(TS3CQConnectionID,*ts3buffer,1024)
+          SendString(TS3CQConnectionID,"sendtextmessage targetmode=2 target=0 msg="+ReplaceString(temp$," ","\s"))
+          ReceiveString(TS3CQConnectionID)
         EndIf
       Delay(1000)
-      Until 3=4
+      ForEver
     EndIf
   Else
     TS3CalloutState=0
     TS3CalloutThread=0
     toggled()
   EndIf
-  FreeMemory(*ts3buffer)
 EndProcedure
 
 ;TTS Callout via a TS3-Bot, this was just a test
@@ -2846,7 +2844,8 @@ ForEver
 
 
 ; IDE Options = PureBasic 5.43 LTS (Windows - x86)
-; CursorPosition = 23
+; CursorPosition = 2763
+; FirstLine = 866
 ; Folding = BAAAAAAAAAAAAAAA+
 ; EnableThread
 ; EnableXP
