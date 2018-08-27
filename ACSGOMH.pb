@@ -1379,7 +1379,7 @@ Procedure SkinChanger()
     currentWeapon_Index = ATPMemory::RPM(hProc, LocalPlayerBase+Offset_hMyWeapon+((x-1)*4))&$fff
     currentWeapon_Entity = ATPMemory::RPM(hProc, ClientModuleBase+Offset_EntityBase+(currentWeapon_Index-1)*$10)
     If currentWeapon_Entity <> 0
-    currentWeapon_Type = ATPMemory::RPM(hProc, currentWeapon_Entity+Offset_m_iItemDefinitionIndex)
+    currentWeapon_Type = ATPMemory::RPM_Word(hProc, currentWeapon_Entity+Offset_m_iItemDefinitionIndex)
     currentWeapon_pkit = ATPMemory::RPM(hProc, currentWeapon_Entity+Offset_m_nFallbackPaintKit)
     WeaponOwnerAccID = ATPMemory::RPM(hProc, currentWeapon_Entity+Offset_m_OriginalOwnerXuidLow)
     If ((currentWeapon_Type > 0 And currentWeapon_Type < 65) Or (currentWeapon_Type > 499 And currentWeapon_Type < 524)) And (WeaponSkins(currentWeapon_Type)\pkit <> currentWeapon_pkit)
@@ -2844,9 +2844,9 @@ ForEver
 
 
 ; IDE Options = PureBasic 5.43 LTS (Windows - x86)
-; CursorPosition = 2763
-; FirstLine = 866
-; Folding = BAAAAAAAAAAAAAAA+
+; CursorPosition = 1393
+; FirstLine = 700
+; Folding = BAAAAAAAAAEAAAAA+
 ; EnableThread
 ; EnableXP
 ; UseIcon = ..\..\..\Pictures\main.ico
