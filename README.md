@@ -1,6 +1,6 @@
 # A CS:GO MultiHack (ACSGOMH)
 
-![Menu](https://i.imgur.com/9dnQ3Ls.png)
+![Menu](https://i.imgur.com/SoViF4f.png)
 
 ACSGOMH is an external CS:GO hack written in Purebasic.
 
