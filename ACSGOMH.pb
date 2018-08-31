@@ -1487,11 +1487,11 @@ Procedure ChatSpam(nullptr.i)
       rmid=Random(3)
       Select rmid
         Case 0
-          message=ReplaceString(#GitHubURL$, "/", "\/")
+          message=RemoveString(#GitHubURL$, "https://")
         Case 1
           message="A CS:GO Multihack!"
         Case 2
-          message="\\(*-*)/ <-- With "+CheatName
+          message="\(*-*)/ <-- With "+CheatName
         Case 3
           message="Wallhack|Aimbot|Triggerbot|TS3Callout|AntiAim|SkinChanger|KnifeChanger|FakeLag|FOV-Changer|Webradar, etc."
       EndSelect
@@ -2844,9 +2844,9 @@ ForEver
 
 
 ; IDE Options = PureBasic 5.43 LTS (Windows - x86)
-; CursorPosition = 2702
-; FirstLine = 803
-; Folding = BAAAAAACAAAAAAAA+
+; CursorPosition = 1487
+; FirstLine = 711
+; Folding = BAAAAAACAAABAAAA+
 ; EnableThread
 ; EnableXP
 ; UseIcon = ..\..\..\Pictures\main.ico
