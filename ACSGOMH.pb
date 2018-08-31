@@ -990,7 +990,6 @@ Procedure NoHands()
 EndProcedure
 
 Procedure FovChanger()
-  Debug FOVChangerFOVvalue
   ATPMemory::WPM(hProc, LocalPlayerBase + Offset_m_iFov, FOVChangerFOVvalue)
 EndProcedure
 
@@ -1251,7 +1250,8 @@ Procedure BunnyHop()
   EndIf
 EndProcedure
 
-Procedure TimedShot(delay.i)
+Procedure TimedShot(tsdelay.i)
+  Delay(tsdelay)
   ATPMemory::WPM(hProc,ClientModuleBase+Offset_ForceAttack, 6)
 EndProcedure
 
@@ -1264,7 +1264,7 @@ Procedure TriggerBot()
       If Triggerbot_Burst(LocalPlayerData\activeWeaponID)
         ExtraShots=Random(2)+1
         For x=1 To ExtraShots
-          CreateThread(@TimedShot(), Triggerbot_Delay(LocalPlayerData\activeWeaponID)+x*20)
+          CreateThread(@TimedShot(), Triggerbot_Delay(LocalPlayerData\activeWeaponID)+x*60)
         Next x
       EndIf
      EndIf
@@ -2702,7 +2702,7 @@ ParseOverview("de_dust2")
 ParseOverview("de_mirage")
 
 If hiddenmode=0
-  OpenACSGOMH_GUI_Window((MainDesktop_Screen_Width/2)-(790/2), (MainDesktop_Screen_Height/2)-(490/2))
+  OpenACSGOMH_GUI_Window((MainDesktop_Screen_Width/2)-(340/2), (MainDesktop_Screen_Height/2)-(360/2))
   SetWindowTitle(ACSGOMH_GUI_Window, CheatName)
   Setup_ACSGOMH_GUI_Window()
 Else
@@ -2844,9 +2844,9 @@ ForEver
 
 
 ; IDE Options = PureBasic 5.43 LTS (Windows - x86)
-; CursorPosition = 1393
-; FirstLine = 700
-; Folding = BAAAAAAAAAEAAAAA+
+; CursorPosition = 2702
+; FirstLine = 803
+; Folding = BAAAAAACAAAAAAAA+
 ; EnableThread
 ; EnableXP
 ; UseIcon = ..\..\..\Pictures\main.ico
