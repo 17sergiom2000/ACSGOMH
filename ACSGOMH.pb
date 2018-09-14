@@ -2849,5 +2849,4 @@ ForEver
 ; Folding = BAAAAAACAAABAAAA+
 ; EnableThread
 ; EnableXP
-; UseIcon = ..\..\..\Pictures\main.ico
 ; Executable = ..\..\PBBuilds\ACSGOMH.exe
