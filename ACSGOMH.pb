@@ -2844,9 +2844,9 @@ ForEver
 
 
 ; IDE Options = PureBasic 5.43 LTS (Windows - x86)
-; CursorPosition = 1487
-; FirstLine = 711
-; Folding = BAAAAAACAAABAAAA+
+; CursorPosition = 2790
+; FirstLine = 869
+; Folding = BAAAAAACAAAAAAAA+
 ; EnableThread
 ; EnableXP
 ; Executable = ..\..\PBBuilds\ACSGOMH.exe
