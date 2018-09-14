@@ -32,6 +32,10 @@ It does not use shellcode-injection, but still has a pretty big variety of featu
 
 Some Features are buggy, because they can not easily be implemented in an external flawlessly (especially without shellcode).
 
+If you get errors when compiling, you are probably using the demo version of purebasic, 
+so you might want to look into https://github.com/pf3ff3rl3/ACSGOMH/issues/1.
+(Although I would recommend you to not actually use ACSGOMH, but instead learn from it!)
+
 ----------------------------------
 
 Although I did create an android app for it, I am not making it open-source because it just is not worth it, the app simply connects to
